@@ -9,7 +9,7 @@ describe PostsController do
 end
 
 feature 'Visiting the Post Index' do
-  scenario 'with existing posts'
+  scenario 'with existing posts' do
     Post.create(name: 'Code Fellow', title: 'Becoming a Code Fellow', content: 'Means striving for excellence.')
     visit posts_path
     page.text.must_include 'Becoming a Code Fellow'
