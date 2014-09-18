@@ -6,9 +6,9 @@ feature "Creating a post" do
   scenario "submit form data to create a new article" do
     # Given a completed new article form
     visit new_post_path
-    fill_in "Name", with: "Crocodile Dundee"
-    fill_in "Title", with: "Code Rails"
-    fill_in "Content", with: "This is how I learned to make web apps."
+    fill_in "Name", with: posts(:create_post).name
+    fill_in "Title", with: posts(:create_post).title
+    fill_in "Content", with: posts(:create_post).content
 
     # When I submit the form
     click_on "Create Post"

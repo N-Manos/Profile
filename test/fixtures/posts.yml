@@ -1,12 +1,13 @@
 # Read about fixtures at
 # http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  name: MyString
-  title: MyString
-  content: MyText
 
-two:
-  name: MyString
-  title: MyString
-  content: MyText
+create_post:
+  name: Crocodile Dundee
+  title: Code Rails
+  content: This is how I learned to make web apps.
+
+second_post:
+  name: Web Dude
+  title: "Becoming a Web Developer"
+  content: It's all about the request-response cycle!
