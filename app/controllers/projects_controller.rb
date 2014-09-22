@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+
   def index
     @projects = Project.all
   end
@@ -13,7 +14,8 @@ class ProjectsController < ApplicationController
       flash[:notice] = "Project has been created."
       redirect_to @project
     else
-     # we'll get to this in a bit
+      flash.now[:error] = "Project could not be saved."
+      render :new
     end
   end
 
