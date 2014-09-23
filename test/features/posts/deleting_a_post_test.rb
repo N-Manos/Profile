@@ -5,7 +5,7 @@ class DeletingAnArticleTest < Capybara::Rails::TestCase
 require "test_helper"
 
 feature "Deleting a Post" do
-  scenario "article is deleted with a click" do
+  scenario "post is deleted" do
     # Given an existing article
     aPost = Post.create(id: 23523, name: "Crocodile Dundee", title: "Hunting Crocidiles is Amazing!", content: "Means striving for excellence.")
 
