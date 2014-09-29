@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'coffee-rails', '~> 4.0.0'
+gem 'devise'
 gem 'poltergeist'
 gem 'foundation-rails', '5.4.3.1'
 gem 'jbuilder', '~> 2.0'

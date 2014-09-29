@@ -4,5 +4,13 @@ My portfolio site
 
 This is a site that has a portfolio of my achivements in web development.
 
-Currently includes a welcome page with a test to make sure it's there and a
+Includes a welcome page with a test to make sure it's there and a
 Blog page with tests to make sure it works.
+
+Also a projects page listing various projects I've done.
+
+There is also a user sign in and authentication system built with devise.
+
+All features are tested and working.
+
+

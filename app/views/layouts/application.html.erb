@@ -14,8 +14,19 @@
     <header>
       <%= render 'layouts/navigation' %>
     </header>
+    <div id = 'user_nav'>
+      <% if current_user.present? %>
+        Signed in as <%= current_user.email %> Not you?
+        <%= link_to "Sign Out", destroy_user_session_path, :method => :delete  %>
+
+      <% else %>
+        <%= link_to 'Sign Up', new_user_registration_path %> or
+        <%= link_to 'Sign In', new_user_session_path %>
+      <% end %>
+    </div>
     <main role="main">
-       <%= render 'layouts/messages' %>
+
+      <%= render 'layouts/messages' %>
        <% flash.each do |key, value| %>
          <div class="alert-box round <%= flash_class(key) %>">
            <%= value %>
