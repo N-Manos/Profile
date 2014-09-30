@@ -22,7 +22,6 @@ feature "Editing a Post" do
 #     save_and_open_page
     fill_in "Title", with: posts(:second_post).title
     click_on "Update Post"
-     save_and_open_page
     page.text.must_include "Post was successfully updated"
     page.text.must_include "Web Developer"
   end
