@@ -10,7 +10,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
-  <body>
+  <body id='application_body'>
     <header>
       <%= render 'layouts/navigation' %>
     </header>
@@ -24,7 +24,7 @@
         <%= link_to 'Sign In', new_user_session_path %>
       <% end %>
     </div>
-    <main role="main">
+    <main id='application_boarder' role="main">
 
       <%= render 'layouts/messages' %>
        <% flash.each do |key, value| %>

@@ -1,11 +1,14 @@
 source 'https://rubygems.org'
 
+gem "binding_of_caller"
 gem 'coffee-rails', '~> 4.0.0'
 gem 'devise'
 gem 'poltergeist'
+gem 'pundit'
 gem 'foundation-rails', '5.4.3.1'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem 'puma'
 gem 'rails', '4.1.6'
 gem 'sass-rails', '~> 4.0.3'
@@ -17,6 +20,7 @@ gem 'minitest-rails'
 group :development do
   gem "sqlite3"
   gem 'rails_layout'
+  gem "better_errors"
 end
 
 group :doc do

@@ -8,5 +8,18 @@
 Alpha:
  email: alpha@gmail.com
 #
+
 Beta:
  email: beta@gmail.com
+
+author:
+  email: author@example.com
+  encrypted_password: <%= User.new.send(:password_digest, 'password') %>
+  role: author
+
+
+editor:
+  email: editor@example.com
+  encrypted_password: <%= User.new.send(:password_digest, 'password') %>
+  role: editor
+
