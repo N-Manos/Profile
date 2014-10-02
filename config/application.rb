@@ -28,13 +28,7 @@ module Portfolio
     # config.i18n.default_locale = :de
 
     # For Foundation 5
-    config.assets.precompile += %w( vendor/modernizr )
-
-    config.assets.precompile += [
-      'application.css.scss',
-      'tree_background.jpg',
-      'framework_and_overrides.css.scss'
-    ]
+    config.assets.precompile += %w( vendor/modernizr *.css *.js *.jpg )
 
   end
 end
