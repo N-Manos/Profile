@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem "binding_of_caller"
+gem 'binding_of_caller'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'devise'
 gem 'poltergeist'
@@ -18,21 +18,22 @@ gem 'uglifier', '>= 1.3.0'
 gem 'minitest-rails'
 
 group :development do
-  gem "sqlite3"
+  gem 'sqlite3'
   gem 'rails_layout'
-  gem "better_errors"
+  gem 'better_errors'
 end
 
 group :doc do
-  gem "sdoc", require: false
+  gem 'sdoc', require: false
 end
 
 group :production do
-  gem "rails_12factor"
-  gem "pg"
+  gem 'rails_12factor'
+  gem 'pg'
+  gem 'unicorn'
 end
 
 group :test do
-  gem "minitest-rails-capybara"
-  gem "launchy"
+  gem 'minitest-rails-capybara'
+  gem 'launchy'
 end
