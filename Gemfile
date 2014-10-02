@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+
 gem 'binding_of_caller'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'devise'
