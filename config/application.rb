@@ -30,5 +30,11 @@ module Portfolio
     # For Foundation 5
     config.assets.precompile += %w( vendor/modernizr )
 
+     config.assets.precompile += [
+      'application.css.scss',
+      'tree_background.jpg',
+      'framework_and_overrides.css.scss'
+    ]
+
   end
 end
