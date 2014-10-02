@@ -15,3 +15,7 @@ before_script:
 bundler_args: --binstubs=./bundler_stubs
 # uncomment this line if your project needs to run something other than `rake`:
 # script: bundle exec rspec spec
+deploy:
+  provider: heroku
+  app: n-manos-portfolio # optional if it's the same as your repo name
+  api_key: "3ab79546-93ef-4c90-9860-427b17eb454b"
