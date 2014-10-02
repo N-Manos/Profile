@@ -7,7 +7,7 @@ feature "Editing a Post" do
 
     sign_up_a_new_user
     visit "/"
-    click_on "Posts"
+    click_on "Articles"
     click_on "New Post"
 #    article = Post.create(id: 23523, name: "Crocodile Dundee", title: "Becoming a Code Fellow", content: "Means striving for excellence.")
     fill_in "Name", with: posts(:create_post).name
@@ -25,5 +25,14 @@ feature "Editing a Post" do
     page.text.must_include "Post was successfully updated"
     page.text.must_include "Web Developer"
   end
+
+  scenario "authors can update posts to fix typos" do
+  end
+
+  scenario "editors can update posts to fix typos" do
+  end
+
+
+
 end
 end

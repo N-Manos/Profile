@@ -17,9 +17,3 @@
 #user_nav{
   float:right;
 }
-
-#application_body {
-  background: url("tree_background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
