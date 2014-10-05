@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 gem 'binding_of_caller'
 gem 'coffee-rails', '~> 4.0.0'
+gem 'coveralls', require: false
 gem 'devise'
 gem 'poltergeist'
 gem 'pundit'
