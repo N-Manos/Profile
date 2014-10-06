@@ -12,7 +12,6 @@ feature 'Visiting the Post Index' do
 
     click_on "Create Post"
     visit posts_path
-    save_and_open_page
     page.text.must_include 'This is how I learned to make web apps.'
   end
 end
