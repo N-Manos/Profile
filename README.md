@@ -11,6 +11,8 @@ Also a projects page listing various projects I've done.
 
 There is also a user sign in and authentication system built with devise.
 
+Authorization rules for posts are done with Pundit.
+
 All features are tested and working.
 
 

@@ -3,10 +3,17 @@ require 'minitest/rails'
 
 feature 'Visiting the Post Index' do
   scenario 'with existing posts' do
-    sign_up_a_new_user
-    Post.create(name: 'Code Fellow', title: 'Becoming a Code Fellow', content: 'Means striving for excellence.')
+    sign_in(:author)
+    visit new_post_path
+
+    fill_in "Name", with: posts(:create_post).name
+    fill_in "Title", with: posts(:create_post).title
+    fill_in "Content", with: posts(:create_post).content
+
+    click_on "Create Post"
     visit posts_path
-    page.text.must_include 'Becoming a Code Fellow'
+    save_and_open_page
+    page.text.must_include 'This is how I learned to make web apps.'
   end
 end
 
