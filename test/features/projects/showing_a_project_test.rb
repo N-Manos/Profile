@@ -7,7 +7,7 @@ feature "As the site visitor, I want to be able to view a single project" do
     #and click show....
     first(:link, 'Show').click
     # Then I should see the project details
-    page.text.must_include "Barnyard Cereal"
+    page.text.must_include "Home"
   end
 end
 

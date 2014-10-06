@@ -8,8 +8,9 @@ class PostPolicy < ApplicationPolicy
   attr_accessor :user, :post
 
   def initialize(user, post)
-    @user = user
+    @user = user || User.new
     @post = post
+
   end
 
   def publish?
@@ -22,6 +23,18 @@ class PostPolicy < ApplicationPolicy
 
   def update?
 
+  end
+
+  def destroy?
+    @user.role == "editor"
+  end
+
+  def index?
+    if @user.role == "editor"
+      return true
+    else
+      @user.id == @post.author_id
+    end
   end
 
 end

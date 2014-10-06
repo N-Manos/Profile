@@ -6,6 +6,7 @@ feature "Creating a post" do
   scenario "submit form data to create a new article" do
 #    sign_up_a_new_user
     sign_in(:author)
+
     visit new_post_path
 
     fill_in "Name", with: posts(:create_post).name

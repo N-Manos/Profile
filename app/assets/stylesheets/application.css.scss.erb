@@ -14,6 +14,14 @@
  *= require_self
  */
 
+//= depend_on_asset "tree_background.jpg"
+
 #user_nav{
   float:right;
+}
+
+#application_body {
+  background-image:url('<%= asset_path("tree_background.jpeg") %> ');
+  background-repeat: no-repeat;
+  background-size: 100%;
 }

@@ -4,19 +4,15 @@ class EditingAPostTest < Capybara::Rails::TestCase
 
 feature "Editing a Post" do
   scenario "submit updates to an existing article" do
-
-    sign_up_a_new_user
-    visit "/"
-    click_on "Articles"
-    click_on "New Post"
 #    article = Post.create(id: 23523, name: "Crocodile Dundee", title: "Becoming a Code Fellow", content: "Means striving for excellence.")
+    sign_in(:author)
+    visit new_post_path
+
     fill_in "Name", with: posts(:create_post).name
     fill_in "Title", with: posts(:create_post).title
     fill_in "Content", with: posts(:create_post).content
+
     click_on "Create Post"
-    click_on "Back"
-#    first('.item').click_link('Agree')
-#    click_on "Edit"
     Capybara.match = :first
     click_on("Edit")
 #     save_and_open_page

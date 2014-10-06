@@ -11,6 +11,10 @@ Also a projects page listing various projects I've done.
 
 There is also a user sign in and authentication system built with devise.
 
+Authorization rules for posts are done with Pundit.
+
 All features are tested and working.
 
+
+[ ![Codeship Status for N-Manos/Portfolio](https://www.codeship.io/projects/a6335700-2cb0-0132-b42c-2ed46d809325/status)](https://www.codeship.io/projects/39022)
 

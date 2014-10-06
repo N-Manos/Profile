@@ -23,3 +23,6 @@ editor:
   encrypted_password: <%= User.new.send(:password_digest, 'password') %>
   role: editor
 
+nobody:
+  email: nobody@example.com
+  encrypted_password: <%= User.new.send(:password_digest, 'password') %>

@@ -6,7 +6,7 @@ create_post:
   name: Crocodile Dundee
   title: Code Rails
   content: This is how I learned to make web apps.
-  author: Alpha
+  author: author
 
 second_post:
   name: Web Dude
