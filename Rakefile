@@ -2,6 +2,8 @@
 # for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
 require File.expand_path('../config/application', __FILE__)
+require 'coveralls/rake/task'
+Coveralls::RakeTask.new
 
 Rails.application.load_tasks
 
@@ -10,3 +12,5 @@ Rails::TestTask.new("test:features" => "test:prepare") do |t|
 end
 
 Rake::Task["test:run"].enhance ["test:features"]
+
+
